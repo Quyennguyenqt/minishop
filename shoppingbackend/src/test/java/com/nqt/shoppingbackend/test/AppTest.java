@@ -1,4 +1,4 @@
-package com.nqt.shoppingbackend;
+package com.nqt.shoppingbackend.test;
 
 import junit.framework.Test;
 import junit.framework.TestCase;

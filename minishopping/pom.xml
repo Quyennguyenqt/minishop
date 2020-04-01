@@ -13,6 +13,13 @@
 		<spring.version>4.3.6.RELEASE</spring.version>
 	</properties>
 	<dependencies>
+
+		<!-- Link backend -->
+		<dependency>
+			<groupId>com.nqt</groupId>
+			<artifactId>shoppingbackend</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
 		<!-- Java EE API -->
 		<!-- https://mvnrepository.com/artifact/javax/javaee-api -->
 		<dependency>
@@ -35,14 +42,22 @@
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-webmvc</artifactId>
 			<version>${spring.version}</version>
+			<exclusions>
+				<exclusion>
+					<groupId>commons-logging</groupId>
+					<artifactId>commons-logging</artifactId>
+				</exclusion>
+			</exclusions>
 		</dependency>
-		
-			<!-- Junit -->
+
+		<!-- Junit -->
 		<dependency>
 			<groupId>jstl</groupId>
 			<artifactId>jstl</artifactId>
 			<version>1.2</version>
 		</dependency>
+
+		
 	</dependencies>
 	<build>
 		<plugins>
